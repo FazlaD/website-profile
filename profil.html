@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title: Judul halaman yang tampil di tab browser -->
+    <title>Profil Diri</title>
+</head>
+
+<!-- body: Bagian utama yang menampilkan konten kepada pengguna -->
+<body style="font-family: 'Times New Roman', Times, serif, sans-serif; margin: 20px;">
+    <!-- h1: Judul utama halaman, menampilkan topik utama -->
+    <h1>Profil Pribadi</h1>
+    <!-- div: Wadah untuk mengelompokkan elemen (foto & video) -->
+    <div>
+    <!-- div: Mengelompokkan bagian foto agar bisa diatur layout-nya -->
+    <div style="display: inline-block; margin-right: 20px; text-align: center;">
+        <!-- h3: Sub-judul untuk menjelaskan bagian foto -->
+        <h3>Foto Profil</h3>
+        <!-- img: Menampilkan gambar profil pribadi -->
+        <img src="Foto Pribadi.jpg" alt="Foto Profil" width="200">
+    </div>
+
+    <!-- div: Mengelompokkan bagian video agar bisa disejajarkan dengan foto -->
+    <div style="display: inline-block; text-align: center;">
+        <!-- h3: Sub-judul untuk menjelaskan bagian video -->
+        <h3>Video Perkenalan</h3>
+        <!-- video: Menampilkan media video perkenalan -->
+        <video width="320" height="200" controls>
+            <!-- source: Menentukan file video dan formatnya -->
+            <source src="Video Perkenalan.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+    <!-- h2: Judul bagian kedua yang menjelaskan deskripsi diri -->
+    <h2>Tentang Saya</h2>
+    <!-- p: Paragraf berisi teks penjelasan diri -->
+    <p>
+        Halo! Saya Fazla, seorang mahasiswa Telkom University yang sedang belajar pemrograman. 
+        Saya mengambil S1 di kampus ini di jurusan Teknologi Informasi. 
+        Saya ingin belajar hal baru tentang teknologi, desain dan coding. 
+        Di waktu luang, saya sering bermain alat musik dan menonton film atau sepak bola.
+    </p>
+
+    <!-- h2: Judul bagian keterampilan -->
+    <h2>Keterampilan</h2>
+    <!-- table: Menampilkan data keterampilan dalam bentuk tabel -->
+    <table border="1" cellpadding="5" cellspacing="0">
+        <!-- tr: Baris tabel -->
+        <tr>
+            <!-- th: Header kolom untuk kategori keterampilan -->
+            <th>Keterampilan</th>
+            <!-- th: Header kolom untuk tingkat keterampilan -->
+            <th>Tingkat</th>
+        </tr>
+        <tr>
+            <!-- td: Sel tabel berisi nama keterampilan -->
+            <td>HTML/CSS</td>
+            <!-- td: Sel tabel berisi tingkat keterampilan -->
+            <td>Menengah</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Pemula</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Pemula</td>
+        </tr>
+    </table>
+
+    <!-- h2: Judul bagian form kontak -->
+    <h2>Hubungi Saya</h2>
+    <!-- form: Membuat formulir untuk menginput data dari pengguna -->
+    <form action="#" method="post">
+        <!-- label: Memberi keterangan pada input agar lebih jelas -->
+        <label for="nama">Nama:</label>
+        <!-- input text: Tempat pengguna mengetik nama -->
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="email">Email:</label>
+        <!-- input email: Tempat pengguna mengetik alamat email -->
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="pesan">Pesan:</label><br>
+        <!-- textarea: Kotak teks besar untuk menuliskan pesan -->
+        <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea><br>
+
+        <!-- button: Tombol untuk mengirim data formulir -->
+        <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <!-- h3: Sub-judul bagian link media sosial -->
+    <h3>Media Sosial</h3>
+     <!-- a: Link menuju Instagram -->
+    <a href="https://www.instagram.com/fazladwikas/" target="_blank">Instagram</a> |
+    <!-- a: Link menuju GitHub -->
+    <a href="https://github.com/FazlaD" target="_blank">GitHub</a> | 
+    <!-- a: Link menuju Twitter -->
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+
+</body>
+</html>
